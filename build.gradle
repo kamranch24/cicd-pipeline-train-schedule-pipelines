@@ -1,10 +1,9 @@
 plugins {
-  //inlude the nodeJS plugin to execute nodejs and npm tasks
-  id "com.moowork.node" version "1.2.0"
+  id "com.github.node-gradle.node" version "2.2.3"
 }
-
 node {
-	download = true
+workDir = file("${projectDir}/.gradle/nodejs")
+download=true
 }
 
 //declare a build task
