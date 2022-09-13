@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh './gradlew wrapper --gradle-version 5.0.0'
+        sh './gradlew wrapper --gradle-version=5.1.1'
         echo 'Starting the build automation'
         sh './gradlew build --no-daemon'
       }
